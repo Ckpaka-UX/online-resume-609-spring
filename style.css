@@ -1,11 +1,12 @@
 body {
     background-color: #fcfcfc;
-    font-family: "Liter"; serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .container {
     display: flex;
-    width: 900px;
+    flex-wrap: wrap;
+    max-width: 900px;
     padding: 20px;
     margin: 40px auto;
     background-color: #b5fdd3;
@@ -13,47 +14,28 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Proza Libre", serif;
+    font-family: "Proza Libre", sans-serif;
     font-weight: 700;
-    font-style: normal;
     color: #222;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-h3 {
-    font-size: 14px;
-    margin-bottom: 6px;
-}
-
-/* Paragraph styles */
-p {
+p, ul {
     font-family: "Cormorant Garamond", serif;
-    font-weight: 700;
-    font-size: 13px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-/* Improve readability */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
 }
 
-.section {
-    margin-bottom: 30px;
+.content {
+    flex: 2;
+    padding: 10px;
 }
 
-/* Styling links */
 a {
     color: #0073e6;
     text-decoration: none;
@@ -61,4 +43,13 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 6px;
 }
