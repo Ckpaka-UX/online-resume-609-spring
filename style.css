@@ -31,6 +31,22 @@ p, ul {
     padding: 10px;
 }
 
+/* Add this section for the headshot */
+.headshot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headshot img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #fff;
+}
+
 .content {
     flex: 2;
     padding: 10px;
