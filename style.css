@@ -4,7 +4,8 @@ html {
 body {
     background-color: #fcfcfc;
     font-family: "Cormorant Garamond", serif;
-    scroll-behavior: smooth;
+    border: 0px;
+    padding: 0;
 }
 
 .container {
