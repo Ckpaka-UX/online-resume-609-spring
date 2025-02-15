@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #fcfcfc;
     font-family: "Cormorant Garamond", serif;
@@ -60,6 +63,9 @@ nav {
     background-color: coral;
     padding: 5px;
     filter: drop-shadow(5px 5px 5px);
+    position: fixed;
+    width: 1000%;
+    top: 0px;
 }
 
 nav ul {
