@@ -1,6 +1,7 @@
 body {
     background-color: #fcfcfc;
     font-family: "Cormorant Garamond", serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -53,4 +54,17 @@ ul {
 
 ul li {
     margin-bottom: 6px;
+}
+
+nav {
+    background-color: coral;
+    padding: 5px;
+    filter: drop-shadow(5px 5px 5px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
 }
