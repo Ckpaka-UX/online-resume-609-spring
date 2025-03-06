@@ -1,11 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    background-color: #fcfcfc;
+    background-color: #F4F4F4; /* Softer background */
     font-family: "Cormorant Garamond", serif;
     border: 0px;
     padding: 0;
+    padding-top: 60px; /* Prevents nav from overlapping content */
 }
 
 .container {
@@ -14,14 +16,14 @@ body {
     max-width: 900px;
     padding: 20px;
     margin: 40px auto;
-    background-color: #e6fdb5;
+    background-color: #E8F6F3; /* Soft minty background for contrast */
     border-radius: 20px;
 }
 
 h1, h2, h3 {
     font-family: "Proza Libre", sans-serif;
     font-weight: 700;
-    color: #222;
+    color: #2C3E50; /* Deep navy */
 }
 
 p, ul {
@@ -36,14 +38,13 @@ p, ul {
     padding: 10px;
 }
 
-
 .content {
     flex: 2;
     padding: 10px;
 }
 
 a {
-    color: #0073e6;
+    color: #1ABC9C; /* Teal for better visibility */
     text-decoration: none;
 }
 
@@ -61,11 +62,11 @@ ul li {
 }
 
 nav {
-    background-color: coral;
-    padding: 5px;
-    filter: drop-shadow(5px 5px 5px);
+    background-color: #2C3E50; /* Deep navy blue */
+    padding: 10px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
     position: fixed;
-    width: 1000%;
+    width: 100%;
     top: 0px;
 }
 
@@ -78,17 +79,24 @@ nav ul {
 }
 
 .menu-container li a {
-    color: #fff;
+    color: #FFFFFF; /* White text for contrast */
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    display: block; /* Ensures full clickability */
+    font-weight: bold;
 }
 
-/* Ensure the menu is properly displayed */
-.menu-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #333; /* Example background */
-    padding: 10px;
+.menu-container li a:hover {
+    color: #1ABC9C; /* Teal hover effect */
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
